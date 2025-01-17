@@ -1,0 +1,263 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis Globais */
+:root {
+    --primary-color: #333;
+    --secondary-color: #1a684b;
+    --text-color: #333;
+    --light-gray: #f4f4f4;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: #f9f9f9;
+    font-size: 1rem;
+    padding-top: 80px; /* Ajuste para a navegação fixa */
+    text-align: center; /* Centraliza textos por padrão */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza textos dentro do container */
+}
+
+/* Header */
+header {
+    background: var(--text-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Seção Geral */
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center; /* Centraliza a imagem */
+    min-width: 280px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Testemunhos */
+.testimonials {
+    background: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.testimonial-photo img {
+    width: 80px; /* Ajuste do tamanho da foto */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Botão Trabalhe Conosco */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Formulário de Contato */
+.contact-form {
+    padding: 4rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .btn {
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background: var(--text-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: var(--primary-color);
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+footer .footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container2 {
+        padding: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,157 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chat interativo com opções básicas.">
+        <title>Cabeçalho Responsivo</title>
+        <link rel="stylesheet" href="style6.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="overlay"></div>
+            <div class="header-content">
+                <div class="logo" href="#">
+                    <img src="sigma_logo-removebg-preview.png" alt="Sigmaplasth Logo" class="logo-image">Sigmaplasth</div>
+                <nav class="navbar" id="navbar">
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Paginadecontatos.html">Contato</a></li>
+                        <li><a href="novac.html">Produtos</a></li>
+                        <li><a href="apoiamos.html">apoiamos</a></li>
+                        <li><a href="façaparte.html">Faça parte</a></li>
+                    </ul>
+                </nav>
+              
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>Transformar <span>Ideias</span> em <span>Soluções</span></h1>
+                <p>Isso melhora o cotidiano e a vida</p>
+            </div>
+            <video autoplay muted loop id="background-video">
+                <source src="video principal .mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </header>
+        <section class="about-section">
+            <div class="container2">
+                <div class="about-image">
+                    <img src="profissional.jpg" alt="Imagem representativa">
+                </div>
+                <div class="about-text">
+                    <h3>Inovação e Colaboração</h3>
+                    <h2>Melhorando a vida é inovando.</h2>
+                    <p>
+                        A Sigmaplasth é uma empresa dedicada à inovação e à colaboração com seus parceiros, desenvolvendo soluções que fazem a diferença na vida das pessoas. Nossas tecnologias de dispensação ao consumidor, entrega de medicamentos e ciência de materiais ativos agregam valor às marcas mais confiáveis e inovadoras do mundo, impactando positivamente a saúde, a aparência e os lares das pessoas.
+                    </p>
+                    <a href="apoiamos.html" class="btn-contact">Conheça</a>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <div id="chat-container">
+            <!-- Botão para abrir o chat -->
+            <div id="chat-icon" tabindex="0" role="button" aria-label="Abrir chat" onclick="toggleChat()" onkeypress="handleKeyPress(event)">
+                <img src="questao.png" alt="Abrir chat">
+            </div>
+    
+            <!-- Janela do chat -->
+            <div id="chat-box" class="hidden" aria-hidden="true">
+                <!-- Cabeçalho -->
+                <div id="chat-header">
+                    <span>Atendente Virtual</span>
+                    <button id="close-chat" tabindex="0" role="button" aria-label="Fechar chat" onclick="toggleChat()" onkeypress="handleKeyPress(event)">×</button>
+                </div>
+    
+                <!-- Corpo das mensagens -->
+                <div id="chat-messages" role="region" aria-live="polite">
+                    <div class="message bot">Olá! Como posso te ajudar hoje?</div>
+                </div>
+    
+                <!-- Campo de entrada -->
+                <div id="chat-input">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        placeholder="Digite sua mensagem..." 
+                        aria-label="Digite sua mensagem" 
+                        onkeypress="handleInputKeyPress(event)">
+                    <button onclick="sendMessage()" aria-label="Enviar mensagem">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Sobre nossa empresa</h2>
+                    <p>
+                        Somos um fornecedor líder de soluções inovadoras projetadas para melhorar a vida cotidiana. Nossa missão é entregar excelência por meio de nossos produtos e serviços, garantindo a mais alta qualidade para nossos clientes em todo o mundo.
+    
+                        Com uma equipe dedicada e tecnologia de ponta, nos esforçamos para causar um impacto positivo nas indústrias que atendemos. Junte-se a nós enquanto continuamos a ultrapassar limites e criar valor.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="imagens do site/4.jpg" alt="About our company">
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Nossa história</h2>
+                    <p>
+                        A Sigmaplasth, desde 1986, é referência no mercado de embalagens plásticas injetadas. Com dedicação e excelência, atendemos os segmentos de peças técnicas (automotivo: Toyota, Henkel, Stellantis), cosméticos, perfumaria, higiene e limpeza. Nossa ferramentaria própria garante o desenvolvimento de projetos exclusivos, moldados para atender às demandas específicas dos nossos clientes.
+                    </p>
+                    <p>
+                        Nossa missão é *desenvolver produtos e prestar serviços que superem as expectativas dos nossos clientes*, sempre estabelecendo relacionamentos de confiança e garantindo o crescimento sustentável e a rentabilidade de nossos negócios.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="imagens do site/sig representação.jpeg" alt="About our company">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Information Section -->
+        <section id="info" class="info">
+            <div class="container">
+                <h2 class="section-title">Trabalhamos com </h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>Inovação</h3>
+                        <p>Promovemos a inovação desenvolvendo soluções de ponta que atendem às necessidades exclusivas de nossos clientes.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Qualidade</h3>
+                        <p>Nossos produtos e serviços são construídos com os mais altos padrões de qualidade para garantir a satisfação do cliente.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Suporte ao cliente</h3>
+                        <p>Oferecemos um suporte excepcional ao cliente, garantindo que todas as suas necessidades sejam atendidas com profissionalismo e cuidado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Sigmaplasth. All rights reserved.</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="script6.js"></script>
+    </body>
+    </html>
+    

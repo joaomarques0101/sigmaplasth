@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trabalhe Conosco</h1>
+        <form action="https://formspree.io/f/mkggezrw" method="POST" enctype="multipart/form-data">
+            <!-- Campo para nome completo -->
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+            <!-- Campo para e-mail -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <!-- Campo para telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" 
+                   pattern="\(\d{2}\) \d{5}-\d{4}" title="Formato esperado: (XX) XXXXX-XXXX" required>
+
+            <!-- Campo para empresas que a pessoa já trabalhou -->
+            <label for="empresas">Empresas onde já trabalhou:</label>
+            <textarea id="empresas" name="empresas" placeholder="Liste as empresas onde você já trabalhou" rows="4" required></textarea>
+
+            <!-- Campo para faculdades feitas -->
+            <label for="faculdades">Faculdades feitas:</label>
+            <textarea id="faculdades" name="faculdades" placeholder="Liste as faculdades onde você estudou" rows="4" required></textarea>
+
+            <!-- Campo para informar se tem o ensino médio completo -->
+            <label for="ensino_medio">Você tem o ensino médio completo?</label>
+            <select id="ensino_medio" name="ensino_medio" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <!-- Campo para habilidades e competências -->
+            <label for="habilidades">Habilidades e Competências:</label>
+            <textarea id="habilidades" name="habilidades" placeholder="Liste suas principais habilidades e competências" rows="4" required></textarea>
+
+            <!-- Campo para expectativa salarial -->
+            <label for="expectativa_salarial">Qual sua expectativa salarial?</label>
+            <input type="number" id="expectativa_salarial" name="expectativa_salarial" placeholder="Informe o valor" required>
+
+            <!-- Campo para disponibilidade para início -->
+            <label for="disponibilidade_inicio">Quando você pode começar?</label>
+            <input type="date" id="disponibilidade_inicio" name="disponibilidade_inicio" required>
+
+            <!-- Campo para motivação para o cargo -->
+            <label for="motivacao">Por que você deseja trabalhar conosco?</label>
+            <textarea id="motivacao" name="motivacao" placeholder="Explique sua motivação para o cargo" rows="4" required></textarea>
+
+            <!-- Campo para referências profissionais -->
+            <label for="referencias">Referências profissionais (Nome, Cargo, Contato):</label>
+            <textarea id="referencias" name="referencias" placeholder="Liste suas referências profissionais" rows="4"></textarea>
+
+            <!-- Campo para idiomas falados -->
+            <label for="idiomas">Idiomas falados:</label>
+            <textarea id="idiomas" name="idiomas" placeholder="Liste os idiomas que você fala" rows="4"></textarea>
+
+            
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Nota adicional -->
+        <p class="note">Certifique-se de que todas as informações estão corretas antes de enviar.</p>
+    </div>
+</body>
+</html>

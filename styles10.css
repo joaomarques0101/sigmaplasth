@@ -1,0 +1,296 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f9f9f9 0%, #e0e0e0 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Banner carrossel */
+.banner-carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh; /* Altura responsiva */
+    background: #000;
+}
+
+.banner-conteudo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.banner-item {
+    flex: 1 0 100%;
+}
+
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a qualidade e o aspecto */
+}
+
+/* Texto do Banner */
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-texto h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-carrossel {
+        height: 50vh; /* Reduz altura em telas menores */
+    }
+
+    .banner-texto h2 {
+        font-size: 2rem;
+    }
+
+    .banner-texto p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-carrossel {
+        height: 40vh; /* Reduz altura ainda mais em telas muito pequenas */
+    }
+
+    .banner-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-texto p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo principal */
+main {
+    padding: 40px 20px;
+    background: #f7f7f7;
+}
+
+.categoria {
+    margin-bottom: 80px;
+}
+
+.categoria h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #222;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.categoria h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ff6f61;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilo do carrossel */
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.carrossel-conteudo {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: max-content;
+    padding: 30px;
+}
+
+.carrossel .item {
+    min-width: 250px;
+    margin-right: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.99);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrossel .item:hover {
+    transform: scale(1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tamanhos padrão para imagens */
+.carrossel .item img {
+    width: 120%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.carrossel .item-title {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+/* Botões de navegação */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carrossel .item {
+        min-width: 200px;
+    }
+
+    .carrossel .item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .carrossel .item img {
+        height: 150px;
+    }
+
+    .nav-btn {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Produtos */
+.produtos {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.produto-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.produto-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.produto-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.about-text {
+    flex: 1 1 280px; /* Ajustado para manter flexibilidade */
+    margin-left: 20px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1rem;
+}
+
+
