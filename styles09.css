@@ -1,0 +1,117 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('0015.JPG'); /* Certifique-se de que a imagem está no mesmo diretório ou ajuste o caminho */
+    background-size: cover; /* A imagem cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    display: flex; /* Centraliza o formulário */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o contêiner do formulário */
+.container {
+    max-width: 90%; /* Largura máxima relativa para dispositivos menores */
+    width: 400px; /* Largura fixa em telas maiores */
+    background: rgba(255, 255, 255, 0.9); /* Fundo translúcido para destaque */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos dos campos */
+label {
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Campos de entrada e botão */
+input, textarea, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* O formulário ocupa quase toda a largura da tela */
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+
+    input, textarea, button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.75rem;
+    }
+}

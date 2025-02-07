@@ -1,0 +1,115 @@
+/* Resetar estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white; /* Fundo branco */
+    color: #333; /* Texto principal em cinza escuro */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contêiner principal */
+.container {
+    background: #f9f9f9; /* Fundo levemente cinza para contraste */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222; /* Cor mais escura para destaque */
+}
+
+/* Descrição */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555; /* Cinza médio */
+}
+
+/* Botões de redes sociais */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-btn {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Estilos específicos para cada rede social */
+.linkedin {
+    background: #0077b5;
+}
+
+.linkedin:hover {
+    background: #005582;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+.instagram:hover {
+    background: #bc2a8d;
+}
+
+.facebook {
+    background: #4267b2;
+}
+
+.facebook:hover {
+    background: #365899;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.whatsapp:hover {
+    background: #1ebe57;
+}
+
+.telegram {
+    background: #0088cc;
+}
+
+.telegram:hover {
+    background: #0077b5;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .social-btn {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
