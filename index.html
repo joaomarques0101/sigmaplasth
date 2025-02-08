@@ -71,21 +71,17 @@
                 </div>
             </div>
         </section>
-        <div id="chat-container">
+       <div id="chat-container">
             <!-- Botão para abrir o chat -->
-            <div id="chat-icon" tabindex="0" role="button" aria-label="Abrir chat"
-                 onclick="toggleChat()" onkeypress="handleKeyPress(event)" ontouchstart="toggleChat()">
+            <div id="chat-icon" tabindex="0" role="button" aria-label="Abrir chat" onclick="toggleChat()" onkeypress="handleKeyPress(event)">
                 <img src="Dinho.png" alt="Abrir chat">
             </div>
             <!-- Janela do chat -->
-            <div id="chat-box" class="hidden" aria-hidden="true" aria-expanded="false">
+            <div id="chat-box" class="hidden" aria-hidden="true">
                 <!-- Cabeçalho -->
                 <div id="chat-header">
                     <span>Atendente Virtual</span>
-                    <button id="close-chat" tabindex="0" role="button" aria-label="Fechar chat"
-                            onclick="toggleChat()" onkeypress="handleKeyPress(event)" ontouchstart="toggleChat()">
-                        x
-                    </button>
+                    <button id="close-chat" tabindex="0" role="button" aria-label="Fechar chat" onclick="toggleChat()" onkeypress="handleKeyPress(event)">×</button>
                 </div>
                 <!-- Corpo das mensagens -->
                 <div id="chat-messages" role="region" aria-live="polite">
@@ -99,12 +95,10 @@
                         placeholder="Digite sua mensagem..." 
                         aria-label="Digite sua mensagem" 
                         onkeypress="handleInputKeyPress(event)">
-                    <button onclick="sendMessage()" aria-label="Enviar mensagem" ontouchstart="sendMessage()">
-                        Enviar
-                    </button>
+                    <button onclick="sendMessage()" aria-label="Enviar mensagem">Enviar</button>
                 </div>
             </div>
-        </div>        
+        </div>
         <!-- texto sobre a empresa -->
         <section id="about" class="about">
             <div class="container about-content">
