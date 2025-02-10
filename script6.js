@@ -183,3 +183,43 @@ function doSearch() {
         alert("Desculpe, não encontramos resultados exatos.");
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Registra o plugin ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Animação para a imagem da seção "about"
+    gsap.from(".about-image", {
+        scrollTrigger: {
+            trigger: ".about-image",
+            start: "top 80%", // quando o topo do elemento atinge 80% da viewport
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        x: -100,
+        duration: 1
+    });
+    
+    // Animação para o texto da seção "about"
+    gsap.from(".about-text", {
+        scrollTrigger: {
+            trigger: ".about-text",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        x: 100,
+        duration: 1
+    });
+    
+    // Exemplo: animação para o texto do cabeçalho
+    gsap.from(".header-text", {
+        scrollTrigger: {
+            trigger: ".header-text",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: -50,
+        duration: 1
+    });
+});
