@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%; /* Evita zoom automático no iOS */
-    transition: background-color 0.3s ease; /* Suaviza transições de fundo */
+    transition: background-color 0.3s ease;
 }
 
 /* Imagens responsivas */
@@ -18,10 +18,10 @@ img {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Suaviza zoom de imagem */
+    transition: transform 0.3s ease;
 }
 
-/* Banner carrossel */
+/* Banner Carrossel */
 .banner-carrossel {
     position: relative;
     overflow: hidden;
@@ -29,7 +29,7 @@ img {
     min-height: 40vh; /* Altura mínima para telas pequenas */
     height: 60vh; /* Altura padrão */
     background: #000;
-    transition: height 0.3s ease-in-out; /* Transição suave na altura */
+    transition: height 0.3s ease-in-out;
 }
 
 .banner-conteudo {
@@ -59,7 +59,7 @@ img {
     color: #fff;
     width: 90%;
     max-width: 600px;
-    transition: transform 0.3s ease-in-out; /* Transição suave no texto */
+    transition: transform 0.3s ease-in-out;
 }
 
 .banner-texto h2 {
@@ -72,48 +72,19 @@ img {
     margin-top: 10px;
 }
 
-/* Responsividade para Banner */
-@media (max-width: 768px) {
-    .banner-carrossel {
-        height: 50vh;
-    }
-
-    .banner-texto h2 {
-        font-size: 2rem;
-    }
-
-    .banner-texto p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-carrossel {
-        height: 40vh;
-    }
-
-    .banner-texto h2 {
-        font-size: 1.5rem;
-    }
-
-    .banner-texto p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Estilo principal */
+/* Estilo Principal */
 main {
-    padding: 30px;
+    padding: 2rem;
     background: #f7f7f7;
 }
 
 .categoria {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .categoria h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     font-size: 2.2rem;
     color: #222;
     position: relative;
@@ -125,7 +96,7 @@ main {
     width: 60px;
     height: 4px;
     background: #ff6f61;
-    margin: 10px auto 0;
+    margin: 1rem auto 0;
     border-radius: 2px;
 }
 
@@ -144,16 +115,16 @@ main {
     display: flex;
     transition: transform 0.6s ease-in-out;
     will-change: transform;
-    gap: 20px; /* Espaçamento entre itens */
+    gap: 1rem;
 }
 
 .item {
-    min-width: 100%; /* Exibição padrão: um item por vez */
+    min-width: 100%;
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -166,10 +137,10 @@ main {
 
 .item:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Botões de navegação */
+/* Botões de Navegação */
 .nav-btn {
     position: absolute;
     top: 50%;
@@ -187,11 +158,11 @@ main {
 
 .nav-btn:hover {
     background: rgba(0, 0, 0, 0.9);
-    transform: translateY(-50%) scale(1.1); /* Leve escala no hover */
+    transform: translateY(-50%) scale(1.1);
 }
 
 .nav-btn:focus {
-    outline: 2px solid #fff; /* Estilo de foco para acessibilidade */
+    outline: 2px solid #fff;
 }
 
 .prev-btn {
@@ -200,33 +171,6 @@ main {
 
 .next-btn {
     right: 10px;
-}
-
-/* Responsividade para Carrossel */
-@media (min-width: 769px) {
-    .carrossel-conteudo {
-        gap: 20px;
-    }
-
-    .item {
-        min-width: 50%; /* Exibir dois itens no desktop */
-    }
-}
-
-@media (max-width: 768px) {
-    .item {
-        min-width: 100%; /* Exibir um item por vez no mobile */
-    }
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease; /* Suaviza a cor de fundo */
 }
 
 /* Produtos */
@@ -249,16 +193,16 @@ footer {
 }
 
 .produto-card {
-    background: linear-gradient(180deg, #fff 0%, #f9f9f9 100%); /* Gradiente suave */
+    background: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produto-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .produto-card img {
@@ -271,27 +215,27 @@ footer {
 /* Sobre a empresa */
 .about-text {
     flex: 1;
-    margin-left: 20px;
+    margin: 1rem;
 }
 
 .about-text h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     color: #555;
 }
 
 /* Seção de Download de PDF */
 #download-pdf {
-    padding: 50px 20px;
+    padding: 3rem 1rem;
     text-align: center;
     background: #f5f5f5;
     border-top: 2px solid #e0e0e0;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 #download-pdf .download-link {
@@ -303,11 +247,73 @@ footer {
     font-weight: bold;
     text-decoration: none;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #download-pdf .download-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra ajustada */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas até 768px (tablets e dispositivos médios) */
+@media (max-width: 768px) {
+    .banner-carrossel {
+        height: 50vh;
+    }
+    .banner-texto h2 {
+        font-size: 2rem;
+    }
+    .banner-texto p {
+        font-size: 1rem;
+    }
+    .carrossel-conteudo {
+        gap: 0.5rem;
+    }
+    /* Ajusta itens do carrossel para ocupar 100% */
+    .item {
+        min-width: 100%;
+    }
+    main, .produtos, #download-pdf {
+        padding: 1rem;
+    }
+}
+
+/* Telas até 480px (celulares) */
+@media (max-width: 480px) {
+    .banner-carrossel {
+        height: 40vh;
+    }
+    .banner-texto h2 {
+        font-size: 1.5rem;
+    }
+    .banner-texto p {
+        font-size: 0.9rem;
+    }
+    .categoria h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Para telas maiores (desktop) */
+/* Exibe dois itens no carrossel */
+@media (min-width: 769px) {
+    .carrossel-conteudo {
+        gap: 1rem;
+    }
+    .item {
+        min-width: 50%;
+    }
 }
